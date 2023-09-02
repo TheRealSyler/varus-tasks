@@ -1,0 +1,25 @@
+{
+  "name": "varus-tasks",
+  "version": "0.0.0",
+  "main": "index.js",
+  "private": true,
+  "author": "Leonard Grosoli <hileo77@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsx watch src/index.ts",
+    "build": "tsx src/env.ts && bash ./install.sh"
+  },
+  "dependencies": {
+    "@emailjs/nodejs": "^2.2.0",
+    "@t3-oss/env-core": "^0.6.1",
+    "@types/node": "^20.5.8",
+    "@types/node-notifier": "^8.0.2",
+    "@vercel/ncc": "^0.36.1",
+    "cron": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "node-notifier": "^10.0.1",
+    "tsx": "^3.12.8",
+    "typescript": "^5.2.2",
+    "zod": "^3.22.2"
+  }
+}
