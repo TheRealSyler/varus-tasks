@@ -19,5 +19,5 @@ echo "copied \"build/*\" to \"$VARUS_INSTALL_PATH/varus-tasks/\""
 cp .env "$VARUS_INSTALL_PATH/varus-tasks/.env"
 echo "copied \".env\" to \"$VARUS_INSTALL_PATH/varus-tasks/.env\""
 
-printf "cd varus-tasks\nstart \"Varus Tasks\" \"node\" \"$(cygpath.exe -m "$VARUS_INSTALL_PATH/varus-tasks/index.js")\"" > "$VARUS_INSTALL_PATH/start-varus-tasks.bat"
+printf "cd varus-tasks\nstart /MIN \"Varus Tasks\" \"node\" \"$(cygpath.exe -m "$VARUS_INSTALL_PATH/varus-tasks/index.js")\"" > "$VARUS_INSTALL_PATH/start-varus-tasks.bat"
 echo "created \"$VARUS_INSTALL_PATH/start-varus-tasks.bat\""

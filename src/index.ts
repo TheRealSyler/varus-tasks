@@ -13,6 +13,7 @@ for (const task of state.tasks) {
 }
 
 function executeTask(task: Task) {
+  console.log(new Date(), 'executing task:', task.title)
   notification(`${task.title}: ${task.description}`)
 
   if (task.sendEmail) {
